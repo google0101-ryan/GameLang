@@ -1,0 +1,8 @@
+using engine.output;
+
+// All GameLang scripts start at the func marked with @entry, and then go from there
+@entry
+void main()
+{
+    output.println("Hello, world!");
+}
