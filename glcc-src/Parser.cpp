@@ -137,6 +137,10 @@ Node* Parser::Parse(std::string outPutFile)
         }
         else if (token.type == PUNCTUATION && token.val == "}")
         {
+            // Insert a return, if the previous node isn't a return
+            if (current->children.back()->type != RETURN)
+                current->children.push_back(new Node{.type = RETURN});
+
             printf("End of function scope!\n");
             current = nullptr;
         }

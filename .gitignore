@@ -1,3 +1,4 @@
 glcc
 *.glc
+example/*.glc
 glvm
