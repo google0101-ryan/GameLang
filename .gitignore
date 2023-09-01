@@ -1,1 +1,3 @@
-lex
+glcc
+*.glc
+glvm

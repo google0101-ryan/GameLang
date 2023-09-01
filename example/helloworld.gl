@@ -1,8 +1,9 @@
-using engine.output;
+var glob_var = "I'M MR WORLDWIDE";
 
-// All GameLang scripts start at the func marked with @entry, and then go from there
-@entry
-void main()
+function main()
 {
-    output.println("Hello, world!");
+    var a = 5;
+    println(glob_var);
+
+    return;
 }

@@ -10,5 +10,6 @@ private:
 public:
     Lexer(std::string buf);
 
-    bool GetNextToken(Token token);
+    bool GetNextToken(Token& token);
+    bool PeekNextToken(Token& token);
 };
